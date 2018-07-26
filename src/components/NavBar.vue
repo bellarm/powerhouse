@@ -46,9 +46,9 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Oswald|Sunflower:300');
+
 .navbar {
-  margin-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   font-family: 'Sunflower', sans-serif;
   overflow: hidden;
   position: relative;
@@ -61,7 +61,7 @@ export default {
 }
 
 .brand {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Oswald', sans-serif;
   color: #000000;
 }

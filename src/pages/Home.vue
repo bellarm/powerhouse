@@ -1,16 +1,25 @@
 <template>
   <div class="home">
-    {{ msg }}
+    <HomeTop/>
+    <WhoWeAre/>
+    <Stories/>
+    <Contact/>
   </div>
 </template>
 
 <script>
+import HomeTop from '@/components/HomeTop'
+import WhoWeAre from '@/components/WhoWeAre'
+import Stories from '@/components/Stories'
+import Contact from '@/components/Contact'
+
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: 'Welcome Home'
-    }
+  components: {
+    HomeTop,
+    WhoWeAre,
+    Stories,
+    Contact
   }
 }
 </script>
