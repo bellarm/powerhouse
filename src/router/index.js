@@ -8,7 +8,6 @@ Vue.use(Router)
 
 export default new Router({
   base: '/powerhouse/',
-  mode: 'history',
   routes: [
     {
       path: '/',
