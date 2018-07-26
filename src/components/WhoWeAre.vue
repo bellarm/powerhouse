@@ -5,6 +5,9 @@
     </div>
     <div class="subtitle">
       Can do like 3 columns for every event
+      <p>
+        Also i definitely need help with choosing colors and how it looks
+      </p>
     </div>
 
   </div>

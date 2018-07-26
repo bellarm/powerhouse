@@ -4,6 +4,7 @@
       STORIES
     </div>
     <div class="subtitle">
+      //TODO: decide how a story looks like
     </div>
 
   </div>
@@ -47,7 +48,7 @@ export default {
 .subtitle {
   font-size: 20px;
   font-family: 'Lora', serif;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 </style>
