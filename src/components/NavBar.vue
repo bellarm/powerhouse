@@ -1,11 +1,11 @@
 <template lang="html">
   <nav class="navbar">
-    <div class="nav-elem brand">
-      <router-link tag="a" :to="{ name: brand.name }">{{ brand.text }}</router-link>
-    </div>
-      <div :class="['nav-elem']" v-for="link in links" :key="link.text">
-        <router-link tag="a" :to="{ name: link.name }">{{ link.text }}</router-link>
-      </div>
+    <router-link tag="a" :to="{ name: brand.name }" class="brand">{{ brand.text }}</router-link>
+    <div class="navbar-right">
+    <template v-for="link in links">
+      <router-link tag="a" :to="{ name: link.name }">{{ link.text }}</router-link>
+    </template>
+  </div>
   </nav>
 </template>
 
@@ -49,25 +49,27 @@ export default {
 .navbar {
   margin-bottom: 10px;
   border-bottom: 1px solid black;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
   font-family: 'Sunflower', sans-serif;
+  overflow: hidden;
+  position: relative;
 }
 
-.nav-elem {
-  margin-left: 20px;
+.navbar a {
+  margin-left: 10px;
+  margin-right: 10px;
   color: #000000;
 }
 
-.nav-elem a {
-  color: #000000;
-}
-
-.brand a {
+.brand {
   font-size: 40px;
   font-family: 'Oswald', sans-serif;
   color: #000000;
+}
+
+.navbar-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 </style>
