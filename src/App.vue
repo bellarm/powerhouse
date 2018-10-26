@@ -1,35 +1,56 @@
 <template>
-  <div id="app">
-    <NavBar/>
-    <router-view/>
+  <div id="app" class="flyout">
+    <navbar position="top" class="default-color" scrolling>
+      <mdb-navbar-brand href="#/" style="font-weight: bolder;">
+        POWERHOUSE
+      </mdb-navbar-brand>
+      <navbar-collapse>
+        <navbar-nav right>
+          <navbar-item router exact href="/" waves-fixed>Home</navbar-item>
+          <navbar-item router href="/css" waves-fixed>About</navbar-item>
+          <navbar-item router href="/components" waves-fixed>Stories</navbar-item>
+          <navbar-item router href="/advanced" waves-fixed>Contact</navbar-item>
+        </navbar-nav>
+      </navbar-collapse>
+    </navbar>
+    <main :style="{marginTop: '60px'}">
+      <router-view></router-view>
+    </main>
+    <Footer class="font-small">
+      <p class="footer-copyright mb-0 text-center">
+        &copy; {{new Date().getFullYear()}} Powerhouse City</a>
+      </p>
+    </Footer>
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
+import { Navbar, NavbarItem, NavbarNav, NavbarCollapse, mdbNavbarBrand, Footer } from 'mdbvue';
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    NavBar
+    Navbar,
+    NavbarItem,
+    NavbarNav,
+    NavbarCollapse,
+    mdbNavbarBrand,
+    Footer
   }
-}
+};
+
 </script>
 
 <style>
-/* Remove margin from body */
-* {
-  margin: 0;
+.flyout {
+	display:flex;
+	flex-direction: column;
+	min-height:100vh;
+	justify-content: space-between;
 }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  text-decoration: none;
+.active {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 </style>
