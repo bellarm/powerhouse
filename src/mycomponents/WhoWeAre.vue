@@ -3,10 +3,12 @@
     <div class="title">
       WHO WE ARE
     </div>
+    <p class="dark-grey-text mx-auto mb-5 w-75 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit id laborum.</p>
       <container>
         <row>
-          <card-group deck style="margin-bottom: 30px;">
-            <card>
+        <column md="4" sm="6">
+          <card>
               <view-wrapper hover cascade>
                 <card-img src="https://via.placeholder.com/600x400" alt="Card image cap"></card-img>
                 <md-mask flex-center waves overlay="white-slight"></md-mask>
@@ -20,7 +22,9 @@
                 </a>
               </card-body>
             </card>
-           <card>
+        </column>
+        <column md="4" sm="6">
+          <card>
               <view-wrapper hover cascade>
                 <card-img src="https://via.placeholder.com/600x400" alt="Card image cap"></card-img>
                 <md-mask flex-center waves overlay="white-slight"></md-mask>
@@ -34,6 +38,8 @@
                 </a>
               </card-body>
             </card>
+          </column>
+          <column md="4" sm="6">
             <card>
               <view-wrapper hover cascade>
                 <card-img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap"></card-img>
@@ -51,8 +57,8 @@
                 </a>
               </card-body>
             </card>
-          </card-group>
-          <card-group deck>
+          </column>
+          <column md="4" sm="6">
             <card>
               <view-wrapper hover cascade>
                 <card-img src="https://via.placeholder.com/600x400" alt="Card image cap"></card-img>
@@ -67,6 +73,8 @@
                 </a>
               </card-body>
             </card>
+          </column>
+          <column md="4" sm="6">
             <card>
               <view-wrapper hover cascade>
                 <card-img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap"></card-img>
@@ -81,6 +89,8 @@
                 </a>
               </card-body>
             </card>
+          </column>
+          <column md="4" sm="6">
             <card>
               <view-wrapper hover cascade>
                 <card-img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap"></card-img>
@@ -95,13 +105,11 @@
                 </a>
               </card-body>
             </card>
-        </card-group>
+          </column>
         </row>
       </container>
 
     </div>
-
-  </div>
 </template>
 
 <script>
@@ -150,10 +158,8 @@ export default {
   color: #black;
 }
 
-.subtitle {
-  font-size: 20px;
-  font-family: 'Lato', serif;
-  color: #black;
-}
+  .card {
+    margin-bottom: 30px;
+  }
 
 </style>

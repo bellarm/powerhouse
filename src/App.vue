@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="flyout">
-    <navbar position="top" class="default-color" scrolling>
-      <mdb-navbar-brand href="#/" style="font-weight: bolder;">
-        POWERHOUSE
+    <navbar position="top" class="default-color" scrolling dark>
+      <mdb-navbar-brand href="#/">
+        <img src="@/assets/powerhouse.jpg" height="30" alt="">
       </mdb-navbar-brand>
       <navbar-collapse>
         <navbar-nav right>
