@@ -7,6 +7,7 @@ import CSSPage from '../docs/categories/CSSPage';
 Vue.use(Router);
 
 export default new Router({
+  base: '/powerhouse/',
   routes: [
     {
       path: '/',
